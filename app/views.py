@@ -68,7 +68,7 @@ def index():
     except Exception as e:
         app.logger.error(f"Error retrieving missing persons: {e}")
         persons = []
-    return render_template('app/index.html', persons=persons)
+    return render_template('index.html', persons=persons)
 
 
 @app.route("/all")
